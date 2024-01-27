@@ -26,13 +26,14 @@ function destroyElements() {
 }
 
 function createBoxes(amount) {
-  boxes.innerHTML = '';
+  let boxesHTML = '';
+  
   for (let i = 0; i < amount; i++) {
-    const box = document.createElement('div');
-    box.style.width = `${30 + i * 10}px`;
-    box.style.height = `${30 + i * 10}px`;
-    box.style.backgroundColor = getRandomHexColor();
-    boxes.appendChild(box);
+    const boxSize = 30 + i * 10;
+    const backgroundColor = getRandomHexColor();
+    boxesHTML += `<div style="width: ${boxSize}px; height: ${boxSize}px; background-color: ${backgroundColor};"></div>`;
   }
+
+  boxes.innerHTML = boxesHTML;
   input.value = '';
 }

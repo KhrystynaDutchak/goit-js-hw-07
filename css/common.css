@@ -159,9 +159,8 @@ button:hover{
   max-width: 500px;
   margin-top: 50px;
   margin-bottom: 16px;
-}
-#controls input{
-  width: 150px;
+  display: flex;
+  gap: 8px;
 }
 #controls button[data-destroy]{
   background-color: #FF4E4E;
@@ -177,4 +176,6 @@ button:hover{
   gap: 16px;
   background: #F6F6FE;
   width: fit-content;
+  display: flex;
+  gap: 8px;
 }

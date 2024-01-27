@@ -30,13 +30,8 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-images.forEach(el => {
-  const image = document.createElement('img');
-  const listItem = document.createElement('li');
-  listItem.classList.add('list-item');
-  image.setAttribute('src', el.url);
-  image.setAttribute('alt', el.alt);
-
-  listItem.appendChild(image);
-  gallery.appendChild(listItem);
+const galleryImages = images.map(el => {
+  return `<li class="gallery-item"><img src="${el.url}" alt="${el.alt}"></li>`;
 });
+
+gallery.insertAdjacentHTML('beforeend', galleryImages.join(''));
