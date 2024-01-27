@@ -12,6 +12,33 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+input{
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #808080;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+}
+input:hover,
+input:focus{
+  border-color: #000;
+}
+button{
+  background: #4E75FF;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: .3s;
+}
+button:hover{
+  background-color: #6C8CFF;
+}
 .go-back a{
   color: #fff;
   text-decoration: none;
@@ -80,11 +107,7 @@ body {
  /* task 3 css */
 
  #name-input{
-  height: 40px;
-  padding: 0 16px;
-  border: 1px solid #808080;
-  min-width: 360px;
-  border-radius: 4px;
+  width: 360px;
  }
  .name{
   font-size: 24px;
@@ -110,29 +133,12 @@ body {
   margin-bottom: 8px;
 }
 .login-form input{
-  height: 40px;
-  padding: 0 16px;
-  border: 1px solid #808080;
-  width: 100%;
-  border-radius: 4px;
   margin-top: 8px;
 }
 .login-form button{
-  background: #4E75FF;
-  color: #fff;
-  border-radius: 8px;
-  padding: 8px 16px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  line-height: 1.5;
-  cursor: pointer;
-  transition: .3s;
   margin-top: 8px;
 }
-.login-form button:hover{
-  background-color: #173ab5;
-}
+
 /* task 5 css */
 .widget{
   max-width: 400px;
@@ -145,22 +151,6 @@ body {
   margin: 0 0 16px;
   font-size: 16px;
 }
-.widget .change-color{
-  background: #4E75FF;
-  border-radius: 8px;
-  color: #fff;
-  padding: 8px 16px;
-  font-size: 16px;
-  line-height: 1.5;
-  border: 1px solid #4E75FF;
-  outline: none;
-  cursor: pointer;
-  transition: .3s;
-}
-.widget .change-color:hover{
-  background: #fff;
-  color: #4E75FF;
-}
 /* task 6 css */
 #controls{
   padding: 32px;
@@ -171,31 +161,13 @@ body {
   margin-bottom: 16px;
 }
 #controls input{
-  height: 40px;
   width: 150px;
-  padding: 8px 32px;
-  border: 1px solid #808080;
-  border-radius: 8px;
-}
-#controls button{
-  height: 40px;
-  border-radius: 8px;
-  font-size: 16px;
-  line-height: 1.5;
-  border: 1px solid;
-  outline : none;
-  padding: 0 26px;
-  cursor: pointer;
-  transition: .3s;
-  color: #fff;
-}
-#controls button[data-create]{
-  background-color: #4E75FF;
-  border-color: #4E75FF;
 }
 #controls button[data-destroy]{
   background-color: #FF4E4E;
-  border-color: #FF4E4E;
+}
+#controls button[data-destroy]:hover{
+  background-color: #FF7070;
 }
 #boxes{
   padding: 32px;
@@ -204,4 +176,5 @@ body {
   border-radius: 8px;
   gap: 16px;
   background: #F6F6FE;
+  width: fit-content;
 }
