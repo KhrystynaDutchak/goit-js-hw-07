@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+.go-back a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: #1c72c8;
+  transition: 0.3s;
+  border: 1px solid #1c72c8;
+}
+.go-back a:hover{
+  color:#1c72c8;
+  background-color: #fff;
+}
+#categories ul,
+#categories{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#categories{
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px;
+  margin: 50px auto;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+#categories h2{
+  margin: 0 0 16px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+#categories .item{
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #F6F6FE;
+}
+#categories .item li{
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+#categories .item li:not(:last-child){
+  margin-bottom: 8px;
+}
+
+ /* task 2 css */
+ .gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 24px;
+    padding: 0;
+    margin: 50px auto;
+    max-width: 1130px;
+    list-style-type: none;
+ }
+ .gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ /* task 3 css */
+
+ #name-input{
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #808080;
+  min-width: 360px;
+  border-radius: 4px;
+ }
+ .name{
+  font-size: 24px;
+  margin: 15px 0 0;
+ }
+
+ /* task 4 css */
+
+.login-form{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 50px auto;
+}
+.login-form label{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.login-form input{
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #808080;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.login-form button{
+  background: #4E75FF;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 8px;
+}
+.login-form button:hover{
+  background-color: #173ab5;
+}
+/* task 5 css */
+.widget{
+  max-width: 400px;
+  padding: 100px 90px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.widget p{
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+.widget .change-color{
+  background: #4E75FF;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #4E75FF;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.widget .change-color:hover{
+  background: #fff;
+  color: #4E75FF;
+}
+/* task 6 css */
+#controls{
+  padding: 32px;
+  background: #F6F6FE;
+  border-radius: 8px;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+#controls input{
+  height: 40px;
+  width: 150px;
+  padding: 8px 32px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+}
+#controls button{
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid;
+  outline : none;
+  padding: 0 26px;
+  cursor: pointer;
+  transition: .3s;
+  color: #fff;
+}
+#controls button[data-create]{
+  background-color: #4E75FF;
+  border-color: #4E75FF;
+}
+#controls button[data-destroy]{
+  background-color: #FF4E4E;
+  border-color: #FF4E4E;
+}
+#boxes{
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  gap: 16px;
+  background: #F6F6FE;
+}
